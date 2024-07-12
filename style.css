@@ -1,0 +1,398 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.658)), url('images/bg-header-desktop.png') no-repeat center center;
+    background-size: cover;
+    padding: 10rem 0;
+}
+
+.download-buttons img{
+    width: 3rem;
+}
+
+.header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+#present {
+    display: flex;
+    justify-content: center;
+}
+
+#present .present-container {
+    width: 70rem;
+    margin: auto;
+}
+
+#present .title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#present .details {
+    margin-top:2rem;
+    text-align: center;
+    font-size:1.5rem;
+    color: #7a7a7a;
+}
+
+#present .download-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.button {
+    padding: 1rem 4rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    font-weight: 500;
+    width: 30%;
+}
+
+.button.ios{
+    background-color: #26baa4;
+    box-shadow: 0 8px 20px rgba(102, 211, 194, 0.5);
+}
+
+.button.ios:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.button.mac{
+    background-color: #6173ff;
+    box-shadow: 0 8px 20px rgba(110, 130, 255, 0.5);
+}
+
+.button.mac:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.second-section {
+    margin-top:10rem;
+}
+
+.third-section {
+    margin-top:10rem;
+}
+
+.image-div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.image-div div {
+    width: 50%;
+}
+
+.monitor-img img{
+    width:100%;
+}
+
+.image-div .details {
+    margin-top: 10rem;
+    margin-left: 10rem;
+}
+
+.image-div .title {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.image-div .desc{
+    width: 100%;
+    font-size: 2rem;
+    color:#7a7a7a;
+}
+
+.image-div .info {
+    margin-bottom: 10rem;
+}
+
+.tabletImg {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tabletImg img {
+    width: 60%
+}
+
+.tools {
+    padding:0 20rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.tools .tool {
+    width: 100%;   
+}
+
+.tool .data{
+    width:60%;
+    margin:auto;
+}
+
+.tool .icon{
+    display:flex;
+    justify-content: center;
+}
+
+.tool .title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tool .desc {
+    font-size: 1.5rem;
+    text-align: center;
+    color:#7a7a7a;
+}
+
+#plain{
+    height: 4rem;
+}
+
+#preview{
+    height: 4rem;
+}
+
+.sponsors {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fifth-section {
+    margin-top: 20rem;
+}
+
+.footer {
+    margin-top: 15rem;
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 5rem 20rem;
+}
+
+.footer .logo img{
+   width: 6rem;
+}
+
+.footer .navigation {
+    display: flex;
+    margin-left: 25rem;
+    gap: 2rem 15rem;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.footer .navigation .footer-link
+{
+    width:15rem;
+}
+
+.footer .navigation .footer-link a{
+    color:#7a7a7a;
+    font-size: 2rem;
+    text-decoration: none;
+} 
+
+.footer .navigation .footer-link a:hover{
+    color:#26baa4;
+}
+
+.footer .social img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer .social {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.footer .social {
+    margin-left:auto;
+}
+
+.footer .social img:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(68%) saturate(482%) hue-rotate(121deg) brightness(100%) contrast(83%);
+}
+
+@media (max-width: 1000px) {
+    .image-div{ 
+        display: block;
+    }
+
+    .image-div .monitor-img{
+        margin: auto
+    }
+
+    .image-div .details {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-left:0;
+        flex-flow: wrap;
+        text-align: center;
+        padding: 0 5rem;
+    }
+
+    .button{
+        width: 25rem;
+        padding: 1rem 6rem;
+
+    }
+
+    .sponsors {
+        display: flex;
+        width: 100%;
+        flex-flow: wrap;
+        gap: 3rem;
+        margin-left: auto;
+        padding: 0 5rem;
+    }
+
+    .tools {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 5rem 5rem;
+    }
+
+    .tabletImg img {
+        width:100%
+    }
+
+    .footer .navigation {
+        display: flex;
+        margin-left: 5rem;
+        gap: 2rem 2rem ;
+        flex-wrap: wrap;
+    }
+
+    .details{
+        padding: 0 5rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .download-buttons {
+        display: block !important;
+    }
+    
+    .present-container{
+        padding: 2rem;
+    }
+
+    .button {
+        width: 25rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+
+    .monitor-img {
+        width: 100% !important;
+    }
+
+    .image-div .details {
+        display: block;
+    }
+
+    .image-div .details .info {
+        margin: auto;
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .image-div .desc{
+        margin-top: 2rem;
+    }
+
+    .tools {
+        display: block;
+    }
+    .tools .tool {
+        margin: auto;
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .sponsors {
+        display: block;
+    }
+
+    .sponsor {
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 8rem;
+    }
+
+    .sponsors .sponsor img {
+        margin: auto;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer .logo {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .footer .navigation {
+        width: fit-content;
+        margin: auto;
+        display: block;
+    }
+
+    .footer .footer-link {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .social{
+        width: fit-content;
+        margin: auto;
+
+        margin-top: 4rem;
+    }
+}
